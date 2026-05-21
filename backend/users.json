@@ -1,0 +1,14 @@
+[
+    {
+        "id": "1f32c726-7d4f-4a27-9af3-84e44c2a41b0",
+        "name": "Gabriel Costan",
+        "email": "gabriel@example.com",
+        "password": "ef92b778ba8cfa1466e9b6d600f718735f8d8ed6c2276c70e5554f46b951f2c7"
+    },
+    {
+        "id": "a8d4e194-2c54-4ff1-b9a9-55c194122a64",
+        "name": "Maria Popescu",
+        "email": "maria@example.com",
+        "password": "6b3a55e0261b0304143f805a24952baf5748dcbf5c5f79f4a53b2df7e88d42f5"
+    }
+]
