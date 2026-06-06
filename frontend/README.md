@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# LeafScan - AI Plant Disease Detection System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+LeafScan is an AI-powered web application that identifies plant diseases from leaf images using a deep learning model based on MobileNetV2. The system combines a Flask REST API backend, a React frontend, and a trained image classification model to provide accurate disease predictions and treatment recommendations.
 
-## Available Scripts
+## Key Achievements
 
-In the project directory, you can run:
+- Trained MobileNetV2 on 54,000+ images from the PlantVillage dataset
+- Achieved 97.3% validation accuracy
+- Developed a full-stack architecture using Flask and React
+- Implemented REST APIs and an end-to-end image processing pipeline
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Plant disease detection from uploaded leaf images
+- Deep learning classification using MobileNetV2
+- Prediction confidence score
+- Disease information and treatment recommendations
+- User authentication and authorization
+- Responsive web interface
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+### Frontend
+- React
+- JavaScript
+- Axios
+- CSS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend
+- Python
+- Flask
+- REST APIs
 
-### `npm run build`
+### AI & Data Processing
+- TensorFlow
+- Keras
+- MobileNetV2
+- OpenCV
+- NumPy
+- Pillow
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Machine Learning
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The model was trained using transfer learning with MobileNetV2 on the PlantVillage dataset, which contains over 54,000 images of healthy and diseased plant leaves across multiple crop species.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The training pipeline included:
+- Image preprocessing and normalization
+- Dataset splitting into training, validation, and test sets
+- Transfer learning and fine-tuning
+- Performance evaluation and model optimization
 
-### `npm run eject`
+## System Architecture
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```text
+React Frontend
+      │
+      ▼
+ Flask REST API
+      │
+      ▼
+ MobileNetV2 Model
+      │
+      ▼
+ Disease Prediction & Analysis
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Workflow
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. User uploads a leaf image.
+2. The image is sent to the Flask API.
+3. The model analyzes the image.
+4. The predicted disease is returned.
+5. The application displays:
+   - Disease name
+   - Confidence score
+   - Disease information
+   - Treatment recommendations
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Installation
 
-## Learn More
+### Backend
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+cd backend
+pip install -r requirements.txt
+python app.py
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Frontend
 
-### Code Splitting
+```bash
+cd frontend
+npm install
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Academic Project
 
-### Analyzing the Bundle Size
+LeafScan was developed as a Bachelor's Degree project in Computer Science and demonstrates the integration of Artificial Intelligence, Computer Vision, Deep Learning, and Full-Stack Web Development into a practical plant disease diagnosis system.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Author
 
-### Making a Progressive Web App
+**Costan Gabriel-Cristian**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Software Engineer
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+LinkedIn:
+https://www.linkedin.com/in/gabriel-costan-b9a92a269
