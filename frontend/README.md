@@ -18,7 +18,7 @@ LeafScan is an AI-powered web application that identifies plant diseases from le
 - User authentication and authorization
 - Responsive web interface
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - React
